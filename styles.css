@@ -1,0 +1,175 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #ffdd57;
+  transform: scale(1.1);
+}
+
+.navbar.scrolled {
+  background: #0056b3;
+}
+
+/* Home Section */
+.home-section {
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffdd57, #ffae00);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-bar input, .search-bar button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-bar input {
+  flex: 1;
+  border-right: 1px solid #ccc;
+}
+
+.search-bar button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #0056b3;
+}
+
+/* About Section */
+.about-section {
+  background: #f9f9f9;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Services Section */
+.services-section {
+  background: #e38a8a;
+}
+
+.services-list {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.services-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.services-list li:last-child {
+  border-bottom: none;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #f4f4f4;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contact-form, .contact-info {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+}

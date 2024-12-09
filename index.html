@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Navigation Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <section id="home" class="home-section">
+      <div class="home-content">
+        <h1>Welcome to The Book Nook</h1>
+        <p>Your one-stop destination for all your reading adventures!</p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for books, authors, or genres..." />
+          <button>Search</button>
+        </div>
+        <a href="#about" class="cta-button">Explore Now</a>
+      </div>
+    </section>
+    
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          At <strong>The Book Nook</strong>, we believe in the magic of books and the power of stories. Our mission is to inspire a love for reading by offering a curated selection of books across genres, catering to readers of all ages and interests.
+        </p>
+        <p>
+          From timeless classics to the latest bestsellers, we strive to be more than just a bookstore — we aim to be a community hub for book enthusiasts. Whether you're looking for your next great read, joining a book club, or attending a literary event, we have something special for you.
+        </p>
+        <p>
+          Let's turn the page together and discover a world of endless imagination and knowledge.
+        </p>
+        <a href="#services" class="cta-button">Discover Our Services</a>
+      </div>
+    </section>
+    <section id="services" class="services-section">
+      <h2>Our Services</h2>
+      <ul class="services-list">
+        <li>📚 Wide range of books across genres</li>
+        <li>📖 Cozy and peaceful reading area</li>
+        <li>🤝 Engaging book clubs and events</li>
+        <li>🌐 Online book purchasing</li>
+        <li>📱 E-books for on-the-go readers</li>
+      </ul>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Feel free to reach out to us using the form below or visit us at our location.</p>
+      <div class="contact-container">
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <h3>Our Location</h3>
+          <p>123 Bookstore Lane,<br> Downtown City, Bookland 12345</p>
+          <h3>Email</h3>
+          <p>contact@bookstore.com</p>
+          <h3>Phone</h3>
+          <p>+1 234-567-890</p>
+        </div>
+      </div>
+    </section>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>
